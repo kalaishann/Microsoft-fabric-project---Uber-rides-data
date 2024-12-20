@@ -26,7 +26,7 @@ This dashboard will help them to figure out total number of ride taken on weekda
 
      - Lakehouse – Created a Lakehouse to store all kind of raw data files including JSON, XML, CSV, EXCEL, SQL data.
      
-
+<a href="https://github.com/kalaishann/Test/blob/main/Lakehouse%20storage.png"> Lakehouse Storage </a>
      - Warehouse – Created a Warehouse to store structured data in tabular format for SQL analysis.
 
 - Step 4 : Data Transformation:
