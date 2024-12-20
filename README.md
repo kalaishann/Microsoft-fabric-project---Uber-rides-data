@@ -1,31 +1,83 @@
 
 
-# Airlines-Dashboard
+# Uber Rides-Dashboard
 
-### Dashboard Link : [https://app.powerbi.com/groups/me/reports/384d017e-e935-44dc-9e7d-1626c1a36de1/ReportSection](https://app.powerbi.com/links/aC6ZMWw2js?ctid=88f944d0-1278-45f9-88d8-dc81b5f77b17&pbi_source=linkShare)
+### Dashboard Link : https://app.powerbi.com/groups/me/reports/384d017e-e935-44dc-9e7d-1626c1a36de1/ReportSection
 
 ## Problem Statement
 
-This dashboard helps the airlines understand their customers better. It helps the airlines know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. It also lets them know the average delay & departure time, thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted delays.
-
-Since, number of neutral/dissatisfied customers (almost 57 %) are more than satisfied customers (around 43 %), thus in all they must work on improving their services. 
-
-Also since average delay in arrival & departure both is 15 minutes, thus they must try to reduce it.
+This dashboard helps the Uber Rides understand their customers better and increase their revenue. It helps the Uber Rides know if their customers are satisfied with their services. Through divers ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. It also let them know in which location have to increase the vehicle availability & driver availability, thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted delays.
 
 
-### Steps followed 
+Also since customer preferrence for long & short distance drive is comparably low for electric fuel type vehicle than the petrol and disel fuel type vehicles.
 
-- Step 1 : Load data into Power BI Desktop, dataset is a csv file.
-- Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
-- Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
-- Step 4 : It was observed that in none of the columns errors & empty values were present except column named "Arrival Delay".
-- Step 5 : For calculating average delay time, null values were not taken into account as only less than 1% values are null in this column(i.e column named "Arrival Delay") 
-- Step 6 : In the report view, under the view tab, theme was selected.
-- Step 7 : Since the data contains various ratings, thus in order to represent ratings, a new visual was added using the three ellipses in the visualizations pane in report view. 
-- Step 8 : Visual filters (Slicers) were added for four fields named "Class", "Customer Type", "Gate Location" & "Type of travel".
-- Step 9 : Two card visuals were added to the canvas, one representing average departure delay in minutes & other representing average arrival delay in minutes.
-           Using visual level filter from the filters pane, basic filtering was used & null values were unselected for consideration into average calculation.
-           
+This dashboard will help them to figure out total number of ride taken on weekdays as well as weekend also what is the revenue status for prime hrs & normal hrs.
+
+
+### Steps i followed 
+
+- Step 1 : Created a Gateway: 
+      - Installed and configured the On-premises Gateway in (Standard mode - for collaborating with team). To pull data from on premises from folder files as well as SQL DB, etc.(here i have used Microsoft fabric as my platform).
+
+- Step 2 : Created workspace:
+      - Created an uber workspace in fabric to keep Lakehouse,Warehouse,Data pipeline, Data flows, Sematic model as well as POWERBI report.
+
+- Step 3 : Data Storage:
+
+     - Lakehouse – Created a Lakehouse to store all kind of raw data files including JSON, XML, CSV, EXCEL, SQL data.
+     
+
+     - Warehouse – Created a Warehouse to store structured data in tabular format for SQL analysis.
+
+- Step 4 : Data Transformation:
+     - Dataflow – Created Dataflow Gen 2 for each files in Lakehouse and implement complex data calculation using DAX, Calculated columns and measures to transform raw data in to structured data in tabular format.
+     - Created a strong data model that can handle uncertainties, changes without compromising the data quality to
+support (OLAP – Online analytical processing).
+
+- Step 4 : Data pipelines:
+     -  Pipeline 1 – for on premises to LH
+     -  Pipeline 2 – SQL DB to LH
+     -  Final pipeline – To invoke PL1 and PL2 one after other to streamline the data flow.
+- step 5: Reporting:
+     - Designed an interactive dashboard in Power BI Desktop, connected via One Lake Data Hub – to bring sematic
+model from warehouse in the fabric environment.
+     - Created a Date Master Table to streamline reporting across all datasets.
+     - Build a Three pages report – Summary, Driver, User.
+Summary View:
+Key KPIs - Total Location, Total Users, Total Drivers, Total Distance, Total Duration, Total Fare, Total Revenue.
+Slicers – Year, Month, Day.
+Dynamic summary view based on model.
+Flow of Revenue based on Prime/ normal hours, Pickup location and drop off location.
+Revenue (Min, Avg, Max) based on hours (Prime/Normal) breaking in to day of the week.
+User Trend on each Quarter by Day of the week.
+Revenue based on Fare per Month.
+Page navigator for Driver and User view and info button.
+Driver View:
+KPIs – Total Locations, Total Trips, Revenue based on Ride Category (Long Travel, Medium Travel and Short
+Travel).
+Slicers – Driver Id, Vehicle Id, Year, Month, Day.
+Average fare and Average distance based on Month.
+Drivers availability based on Fuel type, breaking in to ride category and days (weekday and weekend).
+Driver Performance table based on no of rides and average driver ratings.
+Revenue by capacity and fuel type.
+Page navigator for summary view and User view.
+Back button and info button.
+User View:
+Revenue by User category break down by model.
+Total revenue by User category break down by model and ride category.
+No of Rides by Ride category breaking in to days (weekday / weekend) also by Fuel type.
+User performance table shows User id, No of rides, User category, Ride category, Days.
+Page navigator for Summary view and Driver view.
+Back button and info button.
+ 
+
+ETL Process:
+
+- Step 1 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
+- Step 2 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
+- Step 3 : In USERS dataset i have added the calculated columns to .
+- 
+       ====================================================    
            Although, by default, while calculating average, blank values are ignored.
 - Step 10 : A bar chart was also added to the report design area representing the number of satisfied & neutral/unsatisfied customers. While creating this visual, field named "Gender" was also added to the Legends bucket, thus number of customers are also seggregated according the gender. 
 - Step 11 : Ratings Visual was used to represent different ratings mentioned below,
