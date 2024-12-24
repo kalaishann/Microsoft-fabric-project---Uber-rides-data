@@ -1,5 +1,4 @@
 
-
 # Uber Rides-Dashboard
 
 ### Dashboard Link : https://app.powerbi.com/groups/me/reports/384d017e-e935-44dc-9e7d-1626c1a36de1/ReportSection
@@ -26,7 +25,6 @@ This dashboard will help them to figure out total number of ride taken on weekda
 
      - Lakehouse – Created a Lakehouse to store all kind of raw data files including JSON, XML, CSV, EXCEL, SQL data.
      
-<a href="https://github.com/kalaishann/Test/blob/main/Lakehouse%20storage.png"> Lakehouse Storage </a>
 
      - Warehouse – Created a Warehouse to store structured data in tabular format for SQL analysis.
 
@@ -44,43 +42,42 @@ support (OLAP – Online analytical processing).
 model from warehouse in the fabric environment.
      - Created a Date Master Table to streamline reporting across all datasets.
      - Build a Three pages report – Summary, Driver, User.
-Summary View:
-Key KPIs - Total Location, Total Users, Total Drivers, Total Distance, Total Duration, Total Fare, Total Revenue.
-Slicers – Year, Month, Day.
+### Summary View:
+- Key KPIs - Total Location, Total Users, Total Drivers, Total Distance, Total Duration, Total Fare, Total Revenue.
+- Slicers – Year, Month, Day.
 Dynamic summary view based on model.
-Flow of Revenue based on Prime/ normal hours, Pickup location and drop off location.
-Revenue (Min, Avg, Max) based on hours (Prime/Normal) breaking in to day of the week.
-User Trend on each Quarter by Day of the week.
-Revenue based on Fare per Month.
-Page navigator for Driver and User view and info button.
-Driver View:
-KPIs – Total Locations, Total Trips, Revenue based on Ride Category (Long Travel, Medium Travel and Short
-Travel).
-Slicers – Driver Id, Vehicle Id, Year, Month, Day.
-Average fare and Average distance based on Month.
-Drivers availability based on Fuel type, breaking in to ride category and days (weekday and weekend).
-Driver Performance table based on no of rides and average driver ratings.
-Revenue by capacity and fuel type.
-Page navigator for summary view and User view.
-Back button and info button.
-User View:
-Revenue by User category break down by model.
-Total revenue by User category break down by model and ride category.
-No of Rides by Ride category breaking in to days (weekday / weekend) also by Fuel type.
-User performance table shows User id, No of rides, User category, Ride category, Days.
-Page navigator for Summary view and Driver view.
-Back button and info button.
+- Flow of Revenue based on Prime/ normal hours, Pickup location and drop off location.
+- Revenue (Min, Avg, Max) based on hours (Prime/Normal) breaking in to day of the week.
+- User Trend on each Quarter by Day of the week.
+- Revenue based on Fare per Month.
+- Page navigator for Driver and User view and info button.
+### Driver View:
+- KPIs – Total Locations, Total Trips, Revenue based on Ride Category (Long Travel, Medium Travel and Short Travel).
+- Slicers – Driver Id, Vehicle Id, Year, Month, Day.
+- Average fare and Average distance based on Month.
+- Drivers availability based on Fuel type, breaking in to ride category and days (weekday and weekend).
+- Driver Performance table based on no of rides and average driver ratings.
+- Revenue by capacity and fuel type.
+- Page navigator for summary view and User view.
+- Back button and info button.
+### User View:
+- Revenue by User category break down by model.
+- Total revenue by User category break down by model and ride category.
+- No of Rides by Ride category breaking in to days (weekday / weekend) also by Fuel type.
+- User performance table shows User id, No of rides, User category, Ride category, Days.
+- Page navigator for Summary view and Driver view.
+- Back button and info button.
  
 
-ETL Process:
+### ETL Process:
 
 - Step 1 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 2 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
 - Step 3 : In USERS dataset i have added the calculated columns to .
 - 
-       ====================================================    
            Although, by default, while calculating average, blank values are ignored.
-- Step 10 : A bar chart was also added to the report design area representing the number of satisfied & neutral/unsatisfied customers. While creating this visual, field named "Gender" was also added to the Legends bucket, thus number of customers are also seggregated according the gender. 
+- Step 4 :
+- Step  : A bar chart was also added to the report design area representing the number of satisfied & neutral/unsatisfied customers. While creating this visual, field named "Gender" was also added to the Legends bucket, thus number of customers are also seggregated according the gender. 
 - Step 11 : Ratings Visual was used to represent different ratings mentioned below,
 
   (a) Baggage Handling
