@@ -26,6 +26,8 @@ This dashboard will help them to figure out total number of ride taken on weekda
      - Lakehouse – Created a Lakehouse to store all kind of raw data files including JSON, XML, CSV, EXCEL, SQL data.
      - ![Establishing connecting between on prem to Fabric using Data pipeline](https://github.com/user-attachments/assets/2d932ba2-0b38-45fa-b486-ee26d64f8417)
      ![Diverse files stored in lakehouse](https://github.com/kalaishann/Test/blob/96408a73f64d65fd3696368369d561646ce003e8/Lakehouse%20storage.png)
+    ![LH -On premises Raw data upload](https://github.com/user-attachments/assets/746d6713-69b8-451a-93bb-aa49b16d982d)
+
 
      - Warehouse – Created a Warehouse to store structured data in tabular format for SQL analysis.
 
@@ -40,19 +42,18 @@ support (OLAP – Online analytical processing).
      -  Pipeline 2 – SQL DB to LH
      -  
 ![Copy Data from SQL to Fabric](https://github.com/user-attachments/assets/16da0993-7fec-4ac7-a729-772e0bc1cc4d)
-
-     -  ![RUN the Pipeline to bring data from SQL to LH](https://github.com/user-attachments/assets/132eded0-cf1c-4521-b915-51a7e7ba7f7c)
+![Giving source   Destination   which format we want to save in LH](https://github.com/user-attachments/assets/eaefa
+![RUN the Pipeline to bring data from SQL to LH](https://github.com/user-attachments/assets/132eded0-cf1c-4521-b915-51a7e7ba7f7c)
      -  Final pipeline – To invoke PL1 and PL2 one after other to streamline the data flow.
-     -  ![LH -On premises Raw data upload](https://github.com/user-attachments/assets/746d6713-69b8-451a-93bb-aa49b16d982d)
-     -  ![Giving source   Destination   which format we want to save in LH](https://github.com/user-attachments/assets/eaefac41-7018-4f1a-9baa-0654ac0c3480)
+c41-7018-4f1a-9baa-0654ac0c3480)
 - step 5: Reporting:
      - Designed an interactive dashboard in Power BI Desktop, connected via One Lake Data Hub – to bring sematic
 model from warehouse in the fabric environment.
      - Created a Date Master Table to streamline reporting across all datasets.
      - Build a Three pages report – Summary, Driver, User.
-     - ![POWER BI DESKTOP TO SERVICE](https://github.com/user-attachments/assets/1441a91f-0ed2-4661-b2b3-14d48abb1799)
+ ![POWER BI DESKTOP TO SERVICE](https://github.com/user-attachments/assets/1441a91f-0ed2-4661-b2b3-14d48abb1799)
        
-     - ![Published successfully](https://github.com/user-attachments/assets/1183b26d-6b72-44d1-b6a8-7dc53253b22a)
+ ![Published successfully](https://github.com/user-attachments/assets/1183b26d-6b72-44d1-b6a8-7dc53253b22a)
 ### Summary View:
 - Key KPIs - Total Location, Total Users, Total Drivers, Total Distance, Total Duration, Total Fare, Total Revenue.
 - Slicers – Year, Month, Day.
