@@ -33,17 +33,26 @@ This dashboard will help them to figure out total number of ride taken on weekda
      - Dataflow – Created Dataflow Gen 2 for each files in Lakehouse and implement complex data calculation using DAX, Calculated columns and measures to transform raw data in to structured data in tabular format.
      - Created a strong data model that can handle uncertainties, changes without compromising the data quality to
 support (OLAP – Online analytical processing).
+![Dataflow is same as power query for transforming data](https://github.com/user-attachments/assets/d81f9162-79bc-4604-bfab-195da0a8a49f)
 
 - Step 4 : Data pipelines:
      -  Pipeline 1 – for on premises to LH
      -  Pipeline 2 – SQL DB to LH
+     -  
+![Copy Data from SQL to Fabric](https://github.com/user-attachments/assets/16da0993-7fec-4ac7-a729-772e0bc1cc4d)
+
+     -  ![RUN the Pipeline to bring data from SQL to LH](https://github.com/user-attachments/assets/132eded0-cf1c-4521-b915-51a7e7ba7f7c)
      -  Final pipeline – To invoke PL1 and PL2 one after other to streamline the data flow.
      -  ![LH -On premises Raw data upload](https://github.com/user-attachments/assets/746d6713-69b8-451a-93bb-aa49b16d982d)
+     -  ![Giving source   Destination   which format we want to save in LH](https://github.com/user-attachments/assets/eaefac41-7018-4f1a-9baa-0654ac0c3480)
 - step 5: Reporting:
      - Designed an interactive dashboard in Power BI Desktop, connected via One Lake Data Hub – to bring sematic
 model from warehouse in the fabric environment.
      - Created a Date Master Table to streamline reporting across all datasets.
      - Build a Three pages report – Summary, Driver, User.
+     - ![POWER BI DESKTOP TO SERVICE](https://github.com/user-attachments/assets/1441a91f-0ed2-4661-b2b3-14d48abb1799)
+       
+     - ![Published successfully](https://github.com/user-attachments/assets/1183b26d-6b72-44d1-b6a8-7dc53253b22a)
 ### Summary View:
 - Key KPIs - Total Location, Total Users, Total Drivers, Total Distance, Total Duration, Total Fare, Total Revenue.
 - Slicers – Year, Month, Day.
@@ -53,6 +62,7 @@ Dynamic summary view based on model.
 - User Trend on each Quarter by Day of the week.
 - Revenue based on Fare per Month.
 - Page navigator for Driver and User view and info button.
+- ![pr -1](https://github.com/user-attachments/assets/3bc03332-9acf-40aa-b7cb-0d043ca9fd43)
 ### Driver View:
 - KPIs – Total Locations, Total Trips, Revenue based on Ride Category (Long Travel, Medium Travel and Short Travel).
 - Slicers – Driver Id, Vehicle Id, Year, Month, Day.
