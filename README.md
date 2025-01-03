@@ -37,6 +37,7 @@ support (OLAP – Online analytical processing).
      -  Pipeline 1 – for on premises to LH
      -  Pipeline 2 – SQL DB to LH
      -  Final pipeline – To invoke PL1 and PL2 one after other to streamline the data flow.
+     -  ![LH -On premises Raw data upload](https://github.com/user-attachments/assets/746d6713-69b8-451a-93bb-aa49b16d982d)
 - step 5: Reporting:
      - Designed an interactive dashboard in Power BI Desktop, connected via One Lake Data Hub – to bring sematic
 model from warehouse in the fabric environment.
