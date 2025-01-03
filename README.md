@@ -26,8 +26,8 @@ This dashboard will help them to figure out total number of ride taken on weekda
 - Step 3 : Data Storage:
 
      - Lakehouse – Created a Lakehouse to store all kind of raw data files including JSON, XML, CSV, EXCEL, SQL data.
-     - 
-      ![Establishing connecting between on prem to Fabric using Data pipeline](https://github.com/user-attachments/assets/2d932ba2-0b38-45fa-b486-ee26d64f8417)
+       
+![Establishing connecting between on prem to Fabric using Data pipeline](https://github.com/user-attachments/assets/2d932ba2-0b38-45fa-b486-ee26d64f8417)
      ![Diverse files stored in lakehouse](https://github.com/kalaishann/Test/blob/96408a73f64d65fd3696368369d561646ce003e8/Lakehouse%20storage.png)
     ![LH -On premises Raw data upload](https://github.com/user-attachments/assets/746d6713-69b8-451a-93bb-aa49b16d982d)
 
