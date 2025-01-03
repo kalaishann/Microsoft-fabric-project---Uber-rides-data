@@ -1,7 +1,7 @@
 
 # Uber Rides-Dashboard - Using Microsoft Fabric, POWER BI
 
-### Dashboard Link : https://app.powerbi.com/groups/me/reports/384d017e-e935-44dc-9e7d-1626c1a36de1/ReportSection
+https://github.com/user-attachments/assets/eaa3b70a-8960-482c-9619-cdbb37fb741d
 
 ## Problem Statement
 
@@ -17,13 +17,14 @@ This dashboard will help them to figure out total number of ride taken on weekda
 
 - Step 1 : Created a Gateway: 
       - Installed and configured the On-premises Gateway in (Standard mode - for collaborating with team). To pull data from on premises from folder files as well as SQL DB, etc.(here i have used Microsoft fabric as my platform).
-
+![Connecting SQL DB to Fabric ](https://github.com/user-attachments/assets/714ac744-a962-4b80-a120-aa119d6dd53d)
 - Step 2 : Created workspace:
       - Created an uber workspace in fabric to keep Lakehouse,Warehouse,Data pipeline, Data flows, Sematic model as well as POWERBI report.
 
 - Step 3 : Data Storage:
 
      - Lakehouse – Created a Lakehouse to store all kind of raw data files including JSON, XML, CSV, EXCEL, SQL data.
+     - ![Establishing connecting between on prem to Fabric using Data pipeline](https://github.com/user-attachments/assets/2d932ba2-0b38-45fa-b486-ee26d64f8417)
      ![Diverse files stored in lakehouse](https://github.com/kalaishann/Test/blob/96408a73f64d65fd3696368369d561646ce003e8/Lakehouse%20storage.png)
 
      - Warehouse – Created a Warehouse to store structured data in tabular format for SQL analysis.
