@@ -38,7 +38,7 @@ This dashboard will help them to figure out total number of ride taken on weekda
      - Dataflow – Created Dataflow Gen 2 for each files in Lakehouse and implement complex data calculation using DAX, Calculated columns and measures to transform raw data in to structured data in tabular format.
      - Created a strong data model that can handle uncertainties, changes without compromising the data quality to
 support (OLAP – Online analytical processing).
-![Screenshot 2024-12-06 102043](https://github.com/user-attachments/assets/1d52fb18-677f-41ed-ab11-961356781ef2)
+
 ![Dataflow is same as power query for transforming data](https://github.com/user-attachments/assets/d81f9162-79bc-4604-bfab-195da0a8a49f)
 
 - Step 4 : Data pipelines:
@@ -56,6 +56,7 @@ model from warehouse in the fabric environment.
 ![Screenshot 2024-12-05 212132](https://github.com/user-attachments/assets/b4549a14-e59a-4006-b36a-824a936f6ac1)
 ![Screenshot 2024-12-05 212500](https://github.com/user-attachments/assets/25d02b8d-103f-4627-a88e-79be11629edb)
      - Created a Date Master Table to streamline reporting across all datasets.
+![Screenshot 2024-12-06 102043](https://github.com/user-attachments/assets/1d52fb18-677f-41ed-ab11-961356781ef2)
      - Build a Three pages report – Summary, Driver, User.
  ![POWER BI DESKTOP TO SERVICE](https://github.com/user-attachments/assets/1441a91f-0ed2-4661-b2b3-14d48abb1799)
        
